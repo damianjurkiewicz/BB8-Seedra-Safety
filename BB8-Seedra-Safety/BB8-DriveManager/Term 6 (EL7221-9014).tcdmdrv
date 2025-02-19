@@ -2106,15 +2106,6 @@ Bit 8 - 15 : reserved</Comment>
               <SubIndex>1</SubIndex>
               <Data>00</Data>
             </InitCmd>
-            <InitCmd>
-              <Transition>PS</Transition>
-              <Comment><![CDATA[DRV Amplifier Settings / Position loop proportional gain]]></Comment>
-              <Timeout>0</Timeout>
-              <Ccs>1</Ccs>
-              <Index>32784</Index>
-              <SubIndex>23</SubIndex>
-              <Data>0a000000</Data>
-            </InitCmd>
           </InitCmds>
           <CanOpenType>39</CanOpenType>
           <Profile>

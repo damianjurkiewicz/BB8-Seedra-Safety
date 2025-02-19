@@ -421,6 +421,7 @@
       <Inverter>
         <Device>
           <Name>DMInverterTypeDevice</Name>
+          <ProjectGUID>00000000-0000-0000-0000-000000000000</ProjectGUID>
           <Parameter>
             <PropertyName>MaxAllowedMainVoltage</PropertyName>
             <Value>48</Value>
@@ -860,12 +861,12 @@
                   <Data type="int8">0</Data>
                 </Parameter>
                 <Parameter>
-                  <Comment LcId="1033" />
+                  <Comment LcId="1033"></Comment>
                   <Name>AbsolutePositionData_ResolutionSinglePos</Name>
                   <Data type="int16">18</Data>
                 </Parameter>
                 <Parameter>
-                  <Comment LcId="1033" />
+                  <Comment LcId="1033"></Comment>
                   <Name>AbsolutePositionData_ResolutionMultiPos</Name>
                   <Data type="int16">0</Data>
                 </Parameter>
@@ -948,6 +949,7 @@
             <Load MoveStyle="Linear">
               <IsMotorRotary>true</IsMotorRotary>
               <Name>InverterChannelTypeBlockLoad</Name>
+              <ProjectGUID>00000000-0000-0000-0000-000000000000</ProjectGUID>
               <Parameter>
                 <PropertyName>FeedConstantUnit</PropertyName>
                 <Value>mm</Value>
@@ -992,6 +994,7 @@
             <Controller>
               <Filter Id="0">
                 <Name>ControllerFilter</Name>
+                <ProjectGUID>00000000-0000-0000-0000-000000000000</ProjectGUID>
                 <Parameter>
                   <PropertyName>Filter_Type</PropertyName>
                   <Value>1</Value>
@@ -1097,10 +1100,10 @@
             <DataType>UDINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2147483577</IndexOffset>
+              <IndexGroup>61488</IndexGroup>
+              <IndexOffset>71</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>
@@ -1130,10 +1133,10 @@ Bit 14 - 15 : reserved</Comment>
             <DataType>UINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2147483573</IndexOffset>
+              <IndexGroup>61488</IndexGroup>
+              <IndexOffset>75</IndexOffset>
               <Length>2</Length>
             </AdsInfo>
           </Entry>
@@ -1193,10 +1196,10 @@ Bit 14 - 15 : reserved</Comment>
             <DataType>DINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2147483571</IndexOffset>
+              <IndexGroup>61488</IndexGroup>
+              <IndexOffset>77</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>
@@ -1356,10 +1359,10 @@ Bit 8 - 15 : reserved</Comment>
             <DataType>UINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2130706361</IndexOffset>
+              <IndexGroup>61472</IndexGroup>
+              <IndexOffset>71</IndexOffset>
               <Length>2</Length>
             </AdsInfo>
           </Entry>
@@ -1375,10 +1378,10 @@ Bit 8 - 15 : reserved</Comment>
             <DataType>DINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2130706359</IndexOffset>
+              <IndexGroup>61472</IndexGroup>
+              <IndexOffset>73</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>
@@ -1438,10 +1441,10 @@ Bit 8 - 15 : reserved</Comment>
             <DataType>UDINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2130706355</IndexOffset>
+              <IndexGroup>61472</IndexGroup>
+              <IndexOffset>77</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>

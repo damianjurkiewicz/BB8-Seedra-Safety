@@ -1,16 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <GVL Name="GVL_Safety" Id="{7bb7e622-896f-4ebe-aa73-aef80fbaef18}">
-    <Declaration><![CDATA[{attribute 'qualified_only'}
-VAR_GLOBAL
-
-	RunStop AT%Q* :BOOL;
-	ErrorAck AT%Q* :BOOL;
-	RestartFBs AT%Q* :BOOL;
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="GVL_Safety" Id="{77c0daf9-9a10-098e-3657-0dce897f074e}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	//State
+	SafetySate: INT;
+	ErrorAck_RESETED : BOOL;
 	
-	FBError AT%I* :BOOL;
-	SafeError AT%I* :BOOL;
-	ComError AT%I* :BOOL;
+	//TWinSafe Group
+	FBError						AT %I* :BOOL; //FBerror
+	ComError					AT %I* :BOOL; //ComError
+	SafeError					AT %I* :BOOL; //SafeError
+	RunStop						AT %Q* :BOOL; //RunStop
+	ErrorAck					AT %Q* :BOOL; //ErrorAck
+	
+	eStopButton					AT %I* :BOOL;
+	eStopHMI					:BOOL;
+	
+
+	
+	//Other
+	SAFETY_Permission			AT %I* :BOOL; // FALSE = cannot operate
+	RestartFBs_TSG				AT %Q* :BOOL; // Restart FB in TwinSafe Gr //RestartFBs
+	
 	
 END_VAR]]></Declaration>
   </GVL>

@@ -651,6 +651,7 @@
       <Inverter>
         <Device>
           <Name>DMInverterTypeDevice</Name>
+          <ProjectGUID>00000000-0000-0000-0000-000000000000</ProjectGUID>
           <Parameter>
             <PropertyName>MaxAllowedMainVoltage</PropertyName>
             <Value>48</Value>
@@ -680,7 +681,7 @@
                 <GroupType>AM812x</GroupType>
                 <ElectricMotorType>AM8122-xJx0</ElectricMotorType>
                 <MotorfeedbackType>Sick#EKS36-0KF0A0S16</MotorfeedbackType>
-                <MotorbrakeType />
+                <MotorbrakeType></MotorbrakeType>
                 <AssemblyType>AM8OCT</AssemblyType>
                 <VendorName>BECKHOFF</VendorName>
                 <IsAc>true</IsAc>
@@ -1027,12 +1028,12 @@
                   <Data type="int8">0</Data>
                 </Parameter>
                 <Parameter>
-                  <Comment LcId="1033" />
+                  <Comment LcId="1033"></Comment>
                   <Name>AbsolutePositionData_ResolutionSinglePos</Name>
                   <Data type="int16">18</Data>
                 </Parameter>
                 <Parameter>
-                  <Comment LcId="1033" />
+                  <Comment LcId="1033"></Comment>
                   <Name>AbsolutePositionData_ResolutionMultiPos</Name>
                   <Data type="int16">0</Data>
                 </Parameter>
@@ -1066,6 +1067,7 @@
             <Load MoveStyle="Linear">
               <IsMotorRotary>true</IsMotorRotary>
               <Name>InverterChannelTypeBlockLoad</Name>
+              <ProjectGUID>00000000-0000-0000-0000-000000000000</ProjectGUID>
               <Parameter>
                 <PropertyName>FeedConstantUnit</PropertyName>
                 <Value>mm</Value>
@@ -1110,6 +1112,7 @@
             <Controller>
               <Filter Id="0">
                 <Name>ControllerFilter</Name>
+                <ProjectGUID>00000000-0000-0000-0000-000000000000</ProjectGUID>
                 <Parameter>
                   <PropertyName>Filter_Type</PropertyName>
                   <Value>1</Value>
@@ -1177,11 +1180,11 @@
       </Info>
       <ProcessData>
         <Send>
-          <BitStart>728</BitStart>
+          <BitStart>824</BitStart>
           <BitLength>80</BitLength>
         </Send>
         <Recv>
-          <BitStart>728</BitStart>
+          <BitStart>824</BitStart>
           <BitLength>80</BitLength>
         </Recv>
         <Sm2>
@@ -1215,10 +1218,10 @@
             <DataType>UDINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2147483557</IndexOffset>
+              <IndexGroup>61488</IndexGroup>
+              <IndexOffset>103</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>
@@ -1248,10 +1251,10 @@ Bit 14 - 15 : reserved</Comment>
             <DataType>UINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2147483553</IndexOffset>
+              <IndexGroup>61488</IndexGroup>
+              <IndexOffset>107</IndexOffset>
               <Length>2</Length>
             </AdsInfo>
           </Entry>
@@ -1311,10 +1314,10 @@ Bit 14 - 15 : reserved</Comment>
             <DataType>DINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2147483551</IndexOffset>
+              <IndexGroup>61488</IndexGroup>
+              <IndexOffset>109</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>
@@ -1474,10 +1477,10 @@ Bit 8 - 15 : reserved</Comment>
             <DataType>UINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2130706341</IndexOffset>
+              <IndexGroup>61472</IndexGroup>
+              <IndexOffset>103</IndexOffset>
               <Length>2</Length>
             </AdsInfo>
           </Entry>
@@ -1493,10 +1496,10 @@ Bit 8 - 15 : reserved</Comment>
             <DataType>DINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2130706339</IndexOffset>
+              <IndexGroup>61472</IndexGroup>
+              <IndexOffset>105</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>
@@ -1556,10 +1559,10 @@ Bit 8 - 15 : reserved</Comment>
             <DataType>UDINT</DataType>
             <AdsInfo>
               <AmsAddress>
-                <AmsPort>11</AmsPort>
+                <AmsPort>27906</AmsPort>
               </AmsAddress>
-              <IndexGroup>50593824</IndexGroup>
-              <IndexOffset>-2130706335</IndexOffset>
+              <IndexGroup>61472</IndexGroup>
+              <IndexOffset>109</IndexOffset>
               <Length>4</Length>
             </AdsInfo>
           </Entry>
@@ -2299,7 +2302,7 @@ Bit 8 - 15 : reserved</Comment>
           <Cmd>5</Cmd>
           <Adp>1007</Adp>
           <Ado>1536</Ado>
-          <Data>140000010a0000070011000201000000</Data>
+          <Data>200000010a0000070011000201000000</Data>
           <Cnt>1</Cnt>
           <Retries>3</Retries>
         </InitCmd>
@@ -2309,7 +2312,7 @@ Bit 8 - 15 : reserved</Comment>
           <Cmd>5</Cmd>
           <Adp>1007</Adp>
           <Ado>1552</Ado>
-          <Data>140000010a0000078011000101000000</Data>
+          <Data>200000010a0000078011000101000000</Data>
           <Cnt>1</Cnt>
           <Retries>3</Retries>
         </InitCmd>
